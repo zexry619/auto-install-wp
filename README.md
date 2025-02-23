@@ -38,3 +38,24 @@ Pastikan juga file script disimpan dengan format Unix (LF) untuk menghindari err
 1. Ubah permission script agar dapat dieksekusi:
    ```bash
    chmod +x wordpress_auto.sh
+   ```
+2. Jalankan script:
+   ```bash
+   bash wordpress_auto.sh
+   ```
+3. Ikuti instruksi yang muncul untuk memasukkan nama domain dan kredensial admin WordPress.
+
+### Instalasi Multiple Domain
+1. Ubah permission script agar dapat dieksekusi:
+   ```bash
+   chmod +x wordpress_auto_multi.sh
+   ```
+2. Jalankan script:
+   ```bash
+   bash wordpress_auto_multi.sh
+   ```
+3. Ikuti instruksi yang muncul untuk memasukkan daftar domain (dipisahkan spasi) dan pilih apakah akan menggunakan kredensial admin yang sama atau berbeda untuk tiap domain.
+
+## Catatan
+- Pastikan perintah `uapi` dan `wp-cli` sudah berfungsi dengan baik pada server Anda.
+- Script ini menggunakan jeda pendek (`sleep 3`) untuk memastikan perubahan pada database sudah diterapkan sebelum proses instalasi WordPress dilanjutkan.
